@@ -21,6 +21,7 @@ import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import ImageuploadPlugin from '@ckeditor/ckeditor5-upload/src/imageupload';
 import CodePlugin from '@ckeditor/ckeditor5-basic-styles/src/code';
+import ClipboardPlugin from '@ckeditor/ckeditor5-clipboard/src/clipboard';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -42,7 +43,8 @@ ClassicEditor.build = {
 		ListPlugin,
 		ParagraphPlugin,
 		ImageuploadPlugin,
-		CodePlugin
+		CodePlugin,
+		ClipboardPlugin
 	],
 	config: {
 		toolbar: {
