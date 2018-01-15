@@ -32,7 +32,8 @@ module.exports = {
 			languages: [ buildConfig.language ]
 		} ),
 		new BabiliPlugin( null, {
-			comments: false
+			comments: false,
+            sourceMap: null,
 		} ),
 		new webpack.BannerPlugin( {
 			banner: bundler.getLicenseBanner(),
